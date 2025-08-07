@@ -11,8 +11,8 @@ minimizeBtn.addEventListener('click', () => {
 });
 
 const images = [
-    'yaybirdie.png',
-    'basebirdie.png',
+    'components/yaybirdie.png',
+    'components/basebirdie.png',
 ];
 
 let currentFrame = 0;

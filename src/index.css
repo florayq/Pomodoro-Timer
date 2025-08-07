@@ -4,7 +4,7 @@ body {
   margin: auto;
   max-width: 38rem;
   padding: 2rem; */
-  background-image: url('homepage.png');
+  background-image: url('components/homepage.png');
   position: fixed;
   background-repeat: no-repeat;
   width: 800px;
@@ -16,7 +16,7 @@ body {
   position: absolute;
   top: 321px;
   left: 284px;
-  background-image: url('startbtn.png');
+  background-image: url('components/startbtn.png');
   background-repeat: no-repeat;
   width: 231px;
   height: 67px;
@@ -25,7 +25,7 @@ body {
 
 .close-btn {
   background: transparent;
-  background-image: url('closebtn.png');
+  background-image: url('components/closebtn.png');
   position: absolute;
   width: 75px;
   height: 75px;
@@ -36,7 +36,7 @@ body {
 
 .minimize-btn {
   background: transparent;
-  background-image: url('minimizebtn.png');
+  background-image: url('components/minimizebtn.png');
   position: absolute;
   width: 75px;
   height: 75px;

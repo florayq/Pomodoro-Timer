@@ -1,5 +1,5 @@
 body{
-    background-image: url('timesupscreen.png');
+    background-image: url('components/timesupscreen.png');
     position: fixed;
     background-repeat: no-repeat;
     width: 800px;
@@ -8,7 +8,7 @@ body{
 
 .close-btn {
     background: transparent;
-    background-image: url('closebtn.png');
+    background-image: url('components/closebtn.png');
     position: absolute;
     width: 75px;
     height: 75px;
@@ -19,7 +19,7 @@ body{
 
 .minimize-btn {
     background: transparent;
-    background-image: url('minimizebtn.png');
+    background-image: url('components/minimizebtn.png');
     position: absolute;
     width: 75px;
     height: 75px;
@@ -30,7 +30,7 @@ body{
 
 .repeat {
     background: transparent;
-    background-image: url('repeatbtn.png');
+    background-image: url('components/repeatbtn.png');
     border: none;
     position: absolute;
     width: 231px;

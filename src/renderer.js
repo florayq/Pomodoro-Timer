@@ -11,8 +11,8 @@ minimizeBtn.addEventListener('click', () => {
 });
 
 const images = [
-    'blinkbirdie.png',
-    'basebirdie.png',
+    'components/blinkbirdie.png',
+    'components/basebirdie.png',
 ];
 
 
