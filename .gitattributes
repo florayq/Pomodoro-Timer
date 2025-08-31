@@ -1,0 +1,2 @@
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+C:/Flora/pomodoro-timer/src/components/fontainevibes.mp4 filter=lfs diff=lfs merge=lfs -text
