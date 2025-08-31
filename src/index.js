@@ -9,10 +9,11 @@ const __dirname = dirname(__filename);
 
 let mainWindow;
 
+
 function createWindow() {
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 540,
+    height: 384,
     frame: false,
     transparent: true,
     webPreferences: {
@@ -25,7 +26,13 @@ function createWindow() {
   mainWindow.loadFile(`${__dirname}/index.html`);
 }
 
-app.whenReady().then(createWindow);
+app.whenReady().then(() => {
+  createWindow();
+
+  app.on('activate', () => {
+    if (BrowserWindow.getAllWindows().length === 0) createWindow();
+  });
+});
 
 ipcMain.on('close-window', () => {
   const window = BrowserWindow.getFocusedWindow();

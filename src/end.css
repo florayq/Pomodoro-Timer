@@ -1,0 +1,65 @@
+body{
+    background-image: url('components/background.png');
+    position: fixed;
+    background-repeat: no-repeat;
+    width: 540px;
+    height: 384px;
+}
+
+/* Minimize Button */
+.minimize-btn {
+  position: absolute;
+  top: 0;
+  right: 45px; /* Shifted left from the close button */
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  color: #FFF;
+  font-family: "Playfair Display";
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  color: #FFF;
+  font-family: "Playfair Display";
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+
+.timesup {
+    font-family: "Playfair Display";
+    color: #FFF;
+    font-size: 32px;
+    text-align: center;
+}
+
+.repeat {
+    background: transparent;
+    background-image: url('components/repeatbtn.png');
+    border: none;
+    position: absolute;
+    width: 142px;
+    height: 46px;
+    left: 199px;
+    top: 291px;
+}
+
+.gif {
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin-left: 170px;
+    margin-bottom: 192px;
+}

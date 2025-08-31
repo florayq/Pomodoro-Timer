@@ -10,17 +10,17 @@ minimizeBtn.addEventListener('click', () => {
     ipcRenderer.send('minimize-window');
 });
 
-const images = [
-    'components/yaybirdie.png',
-    'components/basebirdie.png',
-];
+// const images = [
+//     'components/yaybirdie.png',
+//     'components/basebirdie.png',
+// ];
 
-let currentFrame = 0;
-const imageElement = document.getElementById('animation');
+// let currentFrame = 0;
+// const imageElement = document.getElementById('animation');
 
-function animate() {
-    imageElement.src = images[currentFrame];
-    currentFrame = (currentFrame + 1) % images.length;
-}
+// function animate() {
+//     imageElement.src = images[currentFrame];
+//     currentFrame = (currentFrame + 1) % images.length;
+// }
 
-setInterval(animate, 750);
+// setInterval(animate, 750);

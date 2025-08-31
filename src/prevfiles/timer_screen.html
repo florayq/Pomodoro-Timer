@@ -6,16 +6,12 @@
         <title>Pomodoro Timer</title>
         <link rel="stylesheet" href="timer_screen.css" />
         <script defer src="renderer.js"></script>
-        <!-- <script defer src="renderer2.js"></script> -->
     </head>
     <body>
         <div>
             <button id="minimize-btn" class="minimize-btn"></button>
             <button id="close-btn" class="close-btn"></button>
             <img id="animation" class="animation" src="components/basebirdie.png" alt="Bird Pic">
-            <!-- <div class="animationdiv">
-                <img id="animation" class="animation" src="basebirdie.png" alt="Animation Frame">
-            </div> -->
             <div class="countdown">
                 <h1 id="countdown">30:00</h1>
             </div>
@@ -26,21 +22,6 @@
         const countdown = document.getElementById('countdown');
         let timeLeft = 5; //should be 1799 but changed for convenience of debugging
         let timer = setInterval(updateCountdown, 1000);
-        
-        // const images = [
-        //     'basebirdie.png',
-        //     'blinkbirdie.png',
-        // ];
-
-        // let currentFrame = 0;
-        // const imageElement = document.getElementById('animation');
-
-        // function animate() {
-        //     imageElement.src = images[currentFrame];
-        //     currentFrame = (currentFrame + 1) % images.length;
-        // }
-
-        // setInterval(animate, 1000);
 
         function updateCountdown(){
             let minutes = Math.floor(timeLeft / 60);

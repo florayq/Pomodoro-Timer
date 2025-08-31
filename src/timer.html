@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pomodoro Timer</title>
+        <link rel="stylesheet" href="timer.css" />
+        <script defer src="renderer.js"></script>
+    </head>
+    <body>
+        <button id="minimize-btn" class="minimize-btn">_</button>
+        <button id="close-btn" class="close-btn">X</button>
+
+        <div>
+            <video id="bgVideo" preload="true" autoplay loop muted>
+                <source src="components\fontainevibes.mov" />
+            </video>
+            <audio id="bgMusic" autoplay loop hidden>
+                <source src="components\balmybreezeost.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="countdown">
+                <p id="countdown">30:00</p>
+            </div>
+            <button class="endtimer" onclick="window.location.href='index.html';"></button>
+        </div>
+    </body>
+    <script>
+        const countdown = document.getElementById('countdown');
+        let timeLeft = 5; //should be 1799 but changed for convenience of debugging
+        let timer = setInterval(updateCountdown, 1000);
+
+        function updateCountdown(){
+            let minutes = Math.floor(timeLeft / 60);
+            let seconds = timeLeft % 60;
+
+            if (minutes < 10) minutes = "0" + minutes;
+            if (seconds < 10) seconds = "0" + seconds;
+
+            countdown.innerHTML = `${minutes}:${seconds}`;
+            // console.log(timeLeft);
+            if (timeLeft === 0) { // makes sure that timeLeft is 0 so even if "0" it wont work -- "0" would work for ==
+                window.location.href = "end.html";
+                clearInterval(timer); // Stop the timer once it reaches zero -chat
+            } else {
+                timeLeft--;
+            }
+        }
+    </script>
+</html>

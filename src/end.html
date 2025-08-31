@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pomodoro Timer</title>
+        <link rel="stylesheet" href="end.css" />
+        <script defer src="renderer2.js"></script>
+    </head>
+    <body>
+        <button id="minimize-btn" class="minimize-btn">_</button>
+        <button id="close-btn" class="close-btn">X</button>
+        <p class="timesup">Congrats, you did it!</p>
+        <audio id="bgMusic" autoplay hidden>
+            <source src="components/lo-fi-alarm-clock-243766.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <img class="gif" src="components/furinachibi.gif" alt="Chibi Furina">
+
+        <button class="repeat" onclick="window.location.href='index.html';"></button>
+    </body>
+</html>
